@@ -1,0 +1,78 @@
+.tv-footer {
+    background: var(--lb-navy-deep);
+    border-top: 1px solid var(--tv-border);
+    margin-top: 2rem;
+}
+
+.tv-footer-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.tv-footer-name {
+    font-family: Rubik-B, sans-serif;
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+.tv-footer-about {
+    font-family: WorkSans-R, sans-serif;
+    font-size: 0.85rem;
+    color: var(--tv-text-muted);
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+.tv-footer-col-title {
+    font-family: WorkSans-S, sans-serif;
+    font-size: 0.9rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.tv-footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.tv-footer-links a {
+    font-family: WorkSans-R, sans-serif;
+    font-size: 0.85rem;
+    color: var(--tv-text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.tv-footer-links a:hover,
+.tv-footer-links a.active {
+    color: var(--tv-gold);
+}
+
+.tv-footer-hr {
+    border-color: var(--tv-border);
+    margin: 2rem 0 1.5rem;
+}
+
+.tv-footer-copy {
+    font-family: WorkSans-R, sans-serif;
+    font-size: 0.8rem;
+    color: var(--tv-text-muted);
+}
+
+.tv-footer-social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.tv-footer-social a {
+    font-family: WorkSans-R, sans-serif;
+    font-size: 0.8rem;
+    color: var(--tv-text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.tv-footer-social a:hover {
+    color: var(--tv-gold);
+}

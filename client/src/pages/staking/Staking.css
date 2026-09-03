@@ -1,0 +1,101 @@
+.lb-staking .lb-pool-card {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: var(--lb-surface);
+  border: 1px solid var(--lb-border);
+  color: inherit;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: left;
+}
+
+.lb-staking .lb-pool-card:hover,
+.lb-staking .lb-pool-card.active {
+  border-color: rgba(61, 154, 209, 0.65);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.lb-staking .lb-pool-apy {
+  font-family: SpaceMono-B, monospace;
+  color: var(--lb-accent);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.lb-staking .lb-pool-card h3 {
+  font-family: Rubik-B, sans-serif;
+  font-size: 1.15rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.lb-staking .lb-pool-card p {
+  font-family: WorkSans-R, sans-serif;
+  font-size: 0.9rem;
+  color: var(--lb-text-muted);
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+
+.lb-staking .lb-pool-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-family: WorkSans-M, sans-serif;
+  font-size: 0.8rem;
+  color: var(--dark-white);
+}
+
+.lb-stake-panel,
+.lb-gasless-panel {
+  background: var(--lb-surface);
+  border: 1px solid var(--lb-border);
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+.lb-field-label {
+  display: block;
+  font-family: WorkSans-M, sans-serif;
+  font-size: 0.8rem;
+  color: var(--lb-text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.lb-input {
+  width: 100%;
+  background: var(--lb-navy-deep);
+  border: 1px solid var(--lb-border);
+  border-radius: 10px;
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  font-family: SpaceMono-R, monospace;
+}
+
+.lb-input:focus {
+  outline: 1px solid var(--lb-accent);
+}
+
+.lb-status {
+  font-family: WorkSans-R, sans-serif;
+  font-size: 0.9rem;
+  color: var(--lb-green);
+}
+
+.lb-gasless-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lb-gasless-list li {
+  font-family: WorkSans-R, sans-serif;
+  font-size: 0.9rem;
+  color: var(--dark-white);
+  margin-bottom: 0.5rem;
+}

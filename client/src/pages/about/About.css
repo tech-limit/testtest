@@ -1,0 +1,45 @@
+.lb-about-hero {
+  max-width: 760px;
+  margin-bottom: 2.5rem;
+}
+
+.lb-about-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  margin-bottom: 1.25rem;
+}
+
+.lb-about-tagline {
+  color: var(--lb-accent);
+  margin: 0.5rem 0 1rem;
+}
+
+.lb-about-lead {
+  line-height: 1.7;
+  max-width: 640px;
+  margin-bottom: 1.75rem;
+}
+
+.lb-about-card {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: var(--lb-surface);
+  border: 1px solid var(--lb-border);
+}
+
+.lb-about-card h2 {
+  font-family: Rubik-B, sans-serif;
+  font-size: 1.15rem;
+  color: var(--white);
+  margin-bottom: 0.65rem;
+}
+
+.lb-about-card p {
+  font-family: WorkSans-R, sans-serif;
+  font-size: 0.95rem;
+  color: var(--lb-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}

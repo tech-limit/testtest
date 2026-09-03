@@ -1,0 +1,260 @@
+/* ################
+     ROOT
+################*/
+
+:root {
+    /*-----Limit Break V2 theme*/
+    --lb-navy: #00263e;
+    --lb-navy-deep: #001523;
+    --lb-navy-mid: #0a3a56;
+    --lb-navy-soft: #134a6a;
+    --lb-accent: #3d9ad1;
+    --lb-accent-hover: #5ab0e0;
+    --lb-bg: #001523;
+    --lb-surface: #0a2a40;
+    --lb-surface-2: #0f354d;
+    --lb-border: rgba(255, 255, 255, 0.12);
+    --lb-text-muted: #9bb4c4;
+    --lb-green: #2dd4a8;
+    --lb-white: #ffffff;
+
+    /* legacy aliases used across existing CSS */
+    --tv-gold: var(--lb-accent);
+    --tv-gold-hover: var(--lb-accent-hover);
+    --tv-purple: var(--lb-navy-soft);
+    --tv-purple-soft: var(--lb-accent);
+    --tv-bg: var(--lb-bg);
+    --tv-surface: var(--lb-surface);
+    --tv-surface-2: var(--lb-surface-2);
+    --tv-border: var(--lb-border);
+    --tv-text-muted: var(--lb-text-muted);
+    --tv-green: var(--lb-green);
+
+    --lemon: var(--lb-accent);
+    --gray: var(--lb-surface-2);
+    --dark-gray: var(--lb-bg);
+    --white: #ffffff;
+    --dark-white: #e8eef2;
+    --black: #000000;
+
+    --_5px: 5px;
+    --_10px: 10px;
+    --_15px: 15px;
+    --_20px: 20px;
+    --_50px: 50px;
+
+    --btn-border: 2px solid var(--lb-accent);
+}
+
+
+
+/* ################
+    FONTS
+################*/
+
+/*----RubikOne*/
+@font-face {
+    font-family: Rubik-B;
+    src: url(/fonts/rubik-one/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: RubikOne;
+    src: url(/fonts/rubik-one/RubikOne-Regular.ttf);
+}
+
+/*-----WorkSans*/
+@font-face {
+    font-family: WorkSans-S;
+    src: url(/fonts/Work_Sans/WorkSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: WorkSans-R;
+    src: url(/fonts/Work_Sans/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: WorkSans-M;
+    src: url(/fonts/Work_Sans/WorkSans-Medium.ttf);
+}
+
+/*-----SpaceMono*/
+@font-face {
+    font-family: SpaceMono-B;
+    src: url(/fonts/space-Mono/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: SpaceMono-R;
+    src: url(/fonts/space-Mono/SpaceMono-Regular.ttf);
+}
+
+
+
+/* ################
+    TEMPLATES 
+################*/
+
+/*-----basic-template*/
+body {
+    user-select: none;
+    background: var(--lb-bg);
+    background-image:
+        radial-gradient(ellipse 80% 55% at 15% -10%, rgba(61, 154, 209, 0.18), transparent),
+        radial-gradient(ellipse 55% 45% at 95% 5%, rgba(0, 38, 62, 0.9), transparent),
+        linear-gradient(180deg, #001a2b 0%, #00263e 45%, #001523 100%);
+    background-attachment: fixed;
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        radial-gradient(circle at 18% 28%, rgba(61, 154, 209, 0.07), transparent 16%),
+        radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.03), transparent 14%);
+    pointer-events: none;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/*-----fonts*/
+.F1,
+.F2,
+.F3,
+.F4,
+.F5,
+.F6,
+.F7 {
+    all: unset;
+}
+
+.F1 {
+    color: var(--white);
+    font-family: Rubik-B;
+}
+
+.F2 {
+    color: var(--white);
+    font-family: RubikOne;
+    text-transform: capitalize;
+}
+
+.F3 {
+    color: var(--white);
+    font-family: WorkSans-S;
+}
+
+.F4 {
+    color: var(--dark-white);
+    font-family: WorkSans-R;
+}
+
+.F5 {
+    color: var(--white);
+    font-family: WorkSans-M;
+}
+
+.F6 {
+    color: var(--white);
+    font-family: SpaceMono-B;
+}
+
+.F7 {
+    color: var(--white);
+    font-family: SpaceMono-R;
+}
+
+/*-----text Size */
+.textS1 {
+    font-size: calc(100% + 1.1vw + 1.1vh) !important;
+}
+
+.textS2 {
+    font-size: calc(100% + .1vw + .1vh) !important;
+}
+
+.textS3 {
+    font-size: calc(90% + .001vw + .001vh) !important;
+}
+
+
+/*-----colors*/
+.lemon {
+    color: var(--lemon);
+}
+
+
+/*-----btn*/
+.btnTemp,
+.btnTemp-outLine {
+    all: unset;
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: WorkSans-S;
+    border: var(--btn-border);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btnTemp {
+    color: var(--lb-navy-deep);
+    background: linear-gradient(135deg, var(--lb-accent), var(--lb-accent-hover));
+    border-radius: 999px;
+    border: none;
+    box-shadow: 0 4px 24px rgba(61, 154, 209, 0.35);
+}
+
+.btnTemp-outLine {
+    color: var(--lb-accent);
+    background-color: transparent;
+    border-radius: 999px;
+    border: 1px solid rgba(61, 154, 209, 0.55);
+    box-shadow: none;
+}
+
+.btnTemp:hover {
+    color: var(--lb-navy-deep);
+    background: linear-gradient(135deg, var(--lb-accent-hover), #7bc4ea);
+    box-shadow: 0 6px 32px rgba(61, 154, 209, 0.45);
+    transform: scale(1.03);
+}
+
+.btnTemp-outLine:hover {
+    color: var(--lb-navy-deep);
+    background: var(--lb-accent);
+    border-color: var(--lb-accent);
+    box-shadow: 0 4px 24px rgba(61, 154, 209, 0.35);
+}
+
+.brand-wordmark {
+    letter-spacing: 0.02em;
+}
+
+.brand-trovenix,
+.brand-limitbreak {
+    color: var(--white);
+}
+
+.brand-labs {
+    color: var(--lb-accent);
+}
