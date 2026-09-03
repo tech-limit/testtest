@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -31,14 +31,9 @@ import {
 import { WalletProvider } from "./context/WalletContext";
 import WalletPicker from "./components/wallet/WalletPicker";
 import RawData from "./data/data.json";
-import { tokenMiddleware } from "./middleware/tokenMiddleware";
 
 function App() {
   const [data, setData] = useState(RawData);
-
-  useEffect(() => {
-    tokenMiddleware();
-  }, []);
 
   const HadelMemberPage = () => {
     const { userName } = useParams();

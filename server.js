@@ -5,6 +5,7 @@ const config = require('./config');
 const configureMiddleware = require('./middleware');
 const configureRoutes = require('./routes');
 const errorHandler = require('./middleware/errorHandler');
+const tokenMiddleware = require('./middleware/tokenMiddleware');
 
 const app = express();
 configureMiddleware(app);
@@ -17,6 +18,7 @@ const server = app.listen(config.PORT, '127.0.0.1', () => {
   console.log(
     `Server is running in ${config.NODE_ENV} mode on port ${config.PORT}`
   );
+  tokenMiddleware();
 });
 
 const gracefulShutdown = (signal) => {
